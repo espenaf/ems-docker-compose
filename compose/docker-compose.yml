@@ -1,0 +1,40 @@
+version: '2'
+services:
+  email:
+    image: theypsilon/docker-fakesmtp
+    container_name: email
+  db:
+    image: ems-postgresql
+    container_name: ems-postgres
+  ems-app:
+    image: ems
+    container_name: ems
+    depends_on:
+      - db
+    ports:
+      - "5005:5005"
+  submitit-app:
+    image: submitit
+    container_name: submitit
+    ports: 
+      - "8080:8080"
+    depends_on:
+      - ems-app
+      - email
+  cake-app:
+    image: cake
+    container_name: cake
+    ports:
+      - "8082:8082"
+      - "5006:5006"
+    depends_on:
+      - ems-app
+      - email
+  api-app:
+    image: api
+    container_name: api
+    ports:
+      - "8083:8083"
+      - "5007:5007"
+    depends_on:
+      - ems-app
