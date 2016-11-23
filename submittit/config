@@ -10,7 +10,7 @@ mailFrom: connect@trondheimdc.no
 mailBcc: connect@trondheimdc.no
 emsSubmitTalk: http://ems-app:8081/server/events/1f876502-d3c3-44f6-8ea3-a4d0e16331dd/sessions
 emsUser: submitit.redux
-emsPassword: EMS password
+emsPassword: Bm15dxT2Z6RkI5Iw
 photoCopyDir: /tmp/photo
 closing-time: 20161231121212
 close-password: pass
