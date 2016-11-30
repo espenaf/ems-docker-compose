@@ -4,7 +4,7 @@ mkdir -p code
 cd code
 git clone git@github.com:espenaf/ems-redux.git
 cd ems-redux
-git checkout TDC
+git checkout SOS
 sbt appmgr:packageBin
 # target/appmgr
 cd ..
@@ -22,7 +22,7 @@ mvn install -Dmaven.test.skip
 cd ..
 git clone git@github.com:espenaf/javazone-web-api.git
 cd javazone-web-api
-git checkout TDC
+git checkout SOS
 mvn install -Dmaven.test.skip
 # target/javazone-web-api-1.0-SOS-appmgr.zip
 cd ../..
