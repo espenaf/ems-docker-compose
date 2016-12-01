@@ -1,5 +1,5 @@
 #!/bin/bash
-# requires sbt, lein, mvn, docker, docker-compose
+# requires sbt, lein, mvn, docker, docker-compose, unzip
 mkdir -p code
 cd code
 git clone git@github.com:espenaf/ems-redux.git
@@ -35,7 +35,7 @@ cp code/cake-redux/target/cake-redux-1.0.SOS-jar-with-dependencies.jar cake/cake
 sudo docker build -t cake cake
 rm cake/cake-redux.jar
 mkdir -p api/api
-unzip code/javazone-web-api/target/javazone-web-api-1.0-TDC-appmgr.zip -d api/api
+unzip code/javazone-web-api/target/javazone-web-api-1.0-SOS-appmgr.zip -d api/api
 sudo docker build -t api api
 rm -rf api/api
 cp code/submitit-redux/target/submitit-1.0.SOS-standalone.jar submittit/submitit.jar
