@@ -1,4 +1,5 @@
 FROM java:8
+ADD ems/ /
 RUN mkdir -p /root/ems/binary-storage
 ADD ems-prod.conf /root/etc/
 ADD passwords.properties /root/etc/
