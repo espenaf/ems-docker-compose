@@ -12,6 +12,7 @@ services:
     depends_on:
       - db
     ports:
+      - "8081:8081"
       - "5005:5005"
   submitit-app:
     image: submitit
