@@ -6,6 +6,8 @@ services:
   db:
     image: ems-postgresql
     container_name: ems-postgres
+    ports:
+      - "5442:5432"
   ems-app:
     image: ems
     container_name: ems
@@ -13,7 +15,7 @@ services:
       - db
     ports:
       - "8091:8091"
-      - "5005:5005"
+      - "5015:5005"
   submitit-app:
     image: submitit
     container_name: submitit

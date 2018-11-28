@@ -9,4 +9,4 @@ ENV APP_HOME /root
 ENV CONSTRETTO_TAGS prod
 EXPOSE 8091
 EXPOSE 5005
-CMD /wait-for-it.sh db:5432 -- /root/bin/jetty
+CMD /wait-for-it.sh db:5442 -- /root/bin/jetty
