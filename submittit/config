@@ -8,7 +8,7 @@ smtpPort: 25
 serverHostname: https://cfp.soskonf.no
 mailFrom: program@soskonf.no
 mailBcc: program@soskonf.no
-emsSubmitTalk: http://ems-app:8081/server/events/1f876502-d3c3-44f6-8ea3-a4d0e16331dd/sessions
+emsSubmitTalk: http://ems-app:8091/server/events/1f876502-d3c3-44f6-8ea3-a4d0e16331dd/sessions
 emsUser: submitit.redux
 emsPassword: EMS Password
 photoCopyDir: /tmp/photo

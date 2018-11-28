@@ -1,14 +1,14 @@
-emsEventLocation=http://ems-app:8081/server/events
+emsEventLocation=http://ems-app:8091/server/events
 emsUser=submitit.redux
 emsPassword=Bm15dxT2Z6RkI5Iw
 noAuthMode=true
-serverPort=8082
+serverPort=8092
 cakeLocation=<Where you run this app>
 googleClientId=<Client id to the google oath service>
 googleClientSecret=<Client secret id to the google oath service>
-googleRedirectUrl=http://localhost:8081/entrance
+googleRedirectUrl=http://localhost:8091/entrance
 authorizedUsers=Espen Fossen<espenaf@gmail.com>
 #authorizedUsers=The name and email of the authorized users. Listed as : John Doe<johndoe@gmail.com>,Jane Doe<janedoe@gmail.com>
-submititLocation=http://localhost:8080/talkDetail.html?talkid=
+submititLocation=http://localhost:8090/talkDetail.html?talkid=
 smthost=email
 smtpport=25

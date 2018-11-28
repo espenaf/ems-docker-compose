@@ -12,13 +12,13 @@ services:
     depends_on:
       - db
     ports:
-      - "8081:8081"
+      - "8091:8091"
       - "5005:5005"
   submitit-app:
     image: submitit
     container_name: submitit
     ports: 
-      - "8080:8080"
+      - "8090:8090"
     depends_on:
       - ems-app
       - email
@@ -26,7 +26,7 @@ services:
     image: cake
     container_name: cake
     ports:
-      - "8082:8082"
+      - "8092:8092"
       - "5006:5006"
     depends_on:
       - ems-app
